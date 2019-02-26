@@ -1,0 +1,91 @@
+
+<% include partials/header %>
+    
+    <!-- Main -->
+    <main class="dash-content">
+        <div class="container-fluid">
+          <div class="dash-title text-center">
+            <h1>Model Creator</h1>
+            <p>You can create yoour own model in this page, Curently you can only make max <span class="sp-col">6</span> item.</p>
+            <hr>
+          </div>
+          <div class="header">
+            <div class="row dash-row">
+               <!-- Camera -->
+                <div class="camera col-xl-12 text-center">
+                  <video id="camera-stream"></video>
+                </div>
+                <div class="col-xl-12 text-center">
+                  <h6 class="font-weight-lighter"><span id="modelStatus" >Loading base model...</span> | <span id="videoStatus">Loading video...</span></h6>
+                </div>
+
+                <!-- Predict Result -->
+                <div class="col-9 p-xl-1">
+                    <div class="predict stats-success ">
+                        <h6 class="predictText">Its Look Like <span id="result"> ... </span></h6>
+                    </div>
+                </div>
+                <!-- Switch Camera -->
+                <div class="col-3 p-xl-1 btn p-0 pr-3">
+                  <div id="flip-btn" class="switch stats-dark text-monoscope">
+                    <h5 class="predictText">Switch</h5>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="content">
+              <div class="row">
+                <!-- Dataset -->
+                <div class="col-xl-9 btn ">
+                  <h3 class="font-weight-lighter text-center">Click to Add Image</h3>
+                  <div class="row item">
+                    <!-- Image Div Generate -->
+                  </div>
+                </div>
+
+                <!-- Sidebar Tools -->
+                <div class="col-xl-3">
+                    <form class="md-form input-group" >
+                      <input id="nama" type="text" aria-label="First name" class="form-control" placeholder="Name">
+                      <input id="harga" type="number" aria-label="Last name" class="form-control" placeholder="Price">
+                      <div class="input-group-append">
+                        <button id="addBut" class="btn btn-md btn-dark m-0 px-3" type="button" id="MaterialButton-addon2">Add</button>
+                      </div>
+                    </form>
+
+                    <!-- Train Model Button -->
+                    <div class="col-12 mt-4 p-0 btn">
+                      <div id="train" class="predict stats-dark text-monoscope">
+                        <h5 class="predictText">Train Model</h5>
+                      </div>
+                    </div>
+                    <div class="col-12 mt-1 text-center">
+                      <span class="badge badge-secondary loss" id="loss"></span>
+                    </div>
+
+                    <!-- Predict Button -->
+                    <div class="col-12 mt-4 p-0 btn">
+                      <div id="buttonPredict" class="predict stats-dark text-monoscope">
+                        <h5 class="predictText">Predict</h5>
+                      </div>
+                    </div>
+
+                    <!-- Save Model -->
+                    <div class="col-12 mt-4 p-0 btn">
+                      <div id="save" class="predict stats-dark text-monoscope">
+                        <h5 class="predictText">Save Model</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Sidebar Tools -->
+              </div>
+            </div>
+
+        </div>
+    </main>
+</div>
+</div>
+<script src="/js/main.js"></script>
+<script src="/js/camera.js"></script>
+<% include partials/footer %>

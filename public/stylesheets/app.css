@@ -1,0 +1,88 @@
+.header {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+.dash-toolbar {
+	min-height: 50px !important;
+}
+
+.dash-content {
+	padding-top: 0 !important;
+}
+
+.predict {
+	padding: 8px;
+	min-height: 15px;
+	text-align: center;
+	font-size: 13px;
+}
+
+.switch {
+	padding: 8px;
+	min-height: 15px;
+	text-align: center;
+	font-size: 13px;
+}
+
+.predictText {
+	font-size: 0.8rem;
+	margin: 0;
+}
+
+.dash-toolbar {
+	min-height: 50px;
+}
+
+.stats {
+	min-height: 80px;
+}
+
+.loss {
+	font-size: 16px;
+}
+
+.pm {
+	padding: 10px;
+	margin: 5px;
+	border-radius: 8px;
+}
+
+.sp-col {
+	color: red;
+}
+
+hr {
+	height: 12px !important;
+	border: 0 !important;
+	box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5) !important;
+}
+
+video {
+	margin: 0;
+	width: 100%;
+}
+
+.but:hover {
+	color: #1e232d;
+	background: whitesmoke;
+}
+
+@media (min-width: 576px) {
+	video {
+		width: 100%;
+		height: 480px;
+	}
+	.predictText {
+		font-size: 1.2rem;
+		padding: 8px;
+	}
+	.predict {
+		min-height: 20px;
+		padding: 0;
+	}
+	.switch {
+		min-height: 20px;
+		padding: 0;
+	}
+}
