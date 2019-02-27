@@ -16,9 +16,9 @@ app.get('/transfer', function(req, res) {
 	res.render('transfer');
 });
 
-// app.get('/', function(req, res) {
-// 	res.render('index');
-// });
+app.get('/predict', function(req, res) {
+	res.render('predict');
+});
 
 // Server
 app.listen(process.env.PORT || 4000, process.env.IP, function() {

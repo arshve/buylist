@@ -1,0 +1,69 @@
+
+<% include partials/header %>
+    
+<!-- Main -->
+<main class="dash-content">
+    <div class="container-fluid">
+        <div class="dash-title text-center">
+            <h1>Predict Item</h1>
+            <p>You can predict an item from our <span class="sp-col">Model</span> or your own <span class="sp-col">Model</span> and add it Buying List :-)</p>
+            <hr>
+        </div>
+        <div class="header">
+            <div class="row dash-row">
+                <!-- Camera -->
+                <div class="camera col-xl-12 text-center">
+                    <video id="camera-stream"></video>
+                </div>
+                <div class="col-xl-12 text-center">
+                    <h6 class="font-weight-lighter"><span id="modelStatus" >Loading base model...</span> | <span id="videoStatus">Loading video...</span></h6>
+                </div>
+
+                <!-- Predict Result -->
+                <div class="col-9 p-xl-1">
+                    <div class="predict stats-success btn-block">
+                        <h6 class="predictText">Add <span id="result"> ... </span> to your list</h6>
+                    </div>
+                </div>
+                <!-- Switch Camera -->
+                <div class="col-3 p-xl-1 btn p-0 pr-3 btn-block">
+                    <div id="flip-btn" class="switch stats-dark text-monoscope">
+                        <h5 class="predictText">Switch</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+        <div class="content">
+            <div class="row">
+                <div class="col-xl-9">
+
+                </div>
+                <!-- Sidebar Tools -->
+                <div class="col-xl-3 m-0 p-0">
+                    <!-- Predict Button -->
+                    <div class="col-12 mt-4 p-0 btn">
+                        <div id="buttonPredict" class="predict stats-dark text-monoscope">
+                        <h5 class="predictText">Predict</h5>
+                        </div>
+                    </div>
+
+                    <!-- Load Model -->
+                    <div class="col-12 mt-4 p-0 btn">
+                        <div class="predict stats-dark text-monoscope">
+                        <label class="predictText">Load Model</label>
+                        <input type="file" id="load" multiple>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+</div>
+</div>
+<script src="/js/predict.js"></script>
+<script src="/js/camera.js"></script>
+
+<% include partials/footer %>

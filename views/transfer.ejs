@@ -21,12 +21,12 @@
 
                 <!-- Predict Result -->
                 <div class="col-9 p-xl-1">
-                    <div class="predict stats-success ">
+                    <div class="predict stats-success btn-block">
                         <h6 class="predictText">Its Look Like <span id="result"> ... </span></h6>
                     </div>
                 </div>
                 <!-- Switch Camera -->
-                <div class="col-3 p-xl-1 btn p-0 pr-3">
+                <div class="col-3 p-xl-1 btn p-0 pr-3 btn-block">
                   <div id="flip-btn" class="switch stats-dark text-monoscope">
                     <h5 class="predictText">Switch</h5>
                   </div>
@@ -77,6 +77,14 @@
                         <h5 class="predictText">Save Model</h5>
                       </div>
                     </div>
+
+                    <!-- Load Model -->
+                    <div class="col-12 mt-4 p-0 btn">
+                      <div class="predict stats-dark text-monoscope">
+                        <label class="predictText">Load Model</label>
+                        <input type="file" id="load" multiple>
+                      </div>
+                    </div>
                   </div>
                   <!-- End Sidebar Tools -->
               </div>
@@ -86,6 +94,6 @@
     </main>
 </div>
 </div>
-<script src="/js/main.js"></script>
+<script src="/js/transfer.js"></script>
 <script src="/js/camera.js"></script>
 <% include partials/footer %>
