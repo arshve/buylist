@@ -8,8 +8,6 @@ let itemPrice;
 // Camera Setting
 let video = document.querySelector('#camera-stream');
 
-// let itemNumber = 0;
-
 function setup() {
 	noCanvas();
 	// let camera = select('.camera');

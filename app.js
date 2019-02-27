@@ -5,6 +5,7 @@ var express = require('express'),
 // Config
 app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname));
 
 // Route
 app.get('/', function(req, res) {
