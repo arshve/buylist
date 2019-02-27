@@ -16,17 +16,17 @@
                     <video id="camera-stream"></video>
                 </div>
                 <div class="col-xl-12 text-center">
-                    <h6 class="font-weight-lighter"><span id="modelStatus" >Loading base model...</span> | <span id="videoStatus">Loading video...</span></h6>
+                    <h6 class="font-weight-lighter"><span id="modelStatus" >Loading base model...</span>  <span id="videoStatus">Loading video...</span></h6>
                 </div>
 
                 <!-- Predict Result -->
-                <div class="col-9 p-xl-1">
-                    <div class="predict stats-success btn-block">
-                        <h6 class="predictText">Add <span id="result"> ... </span> to your list</h6>
+                <div class="col-9 p-xl-1 p-0 btn">
+                    <div class="predict stats-success ">
+                        <h6 class="predictText">Add <span id="name">...</span> <span id="price">...</span> to your list</h6>
                     </div>
                 </div>
                 <!-- Switch Camera -->
-                <div class="col-3 p-xl-1 btn p-0 pr-3 btn-block">
+                <div class="col-3 p-xl-1 btn p-0 btn">
                     <div id="flip-btn" class="switch stats-dark text-monoscope">
                         <h5 class="predictText">Switch</h5>
                     </div>
@@ -37,11 +37,14 @@
 
         <div class="content">
             <div class="row">
-                <div class="col-xl-9">
-
+                <div class="list col-xl-9 col-md-12">
+                    <!-- Your List Of Buy -->
+                    <div class="text-center">
+                        <h3>Buy List</h3>
+                    </div>
                 </div>
                 <!-- Sidebar Tools -->
-                <div class="col-xl-3 m-0 p-0">
+                <div class="col-xl-3 col-md-12 m-0 p-0">
                     <!-- Predict Button -->
                     <div class="col-12 mt-4 p-0 btn">
                         <div id="buttonPredict" class="predict stats-dark text-monoscope">

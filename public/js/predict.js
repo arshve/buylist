@@ -1,28 +1,28 @@
 let mobilenet;
 let classifier;
 // Camera Setting
+let label = 'Loading the model';
 let video = document.querySelector('#camera-stream');
 
 // STATUS
 // model
 function modelReady() {
 	select('#modelStatus').html('Model Ready!!');
-	customModelReady();
+	classifier.load('model.json', customModelReady);
 }
 
 function customModelReady() {
 	console.log('Custom Model is Ready');
-	classifier.load('./model.json');
 }
 
 // camera
 function videoReady() {
 	select('#videoStatus').html('Video ready!');
+	classifier.classify(gotResults);
 }
 
 function setup() {
 	noCanvas();
-
 	// Extract PreTrain features from MobileNet
 	mobilenet = ml5.featureExtractor('MobileNet', modelReady);
 
@@ -46,9 +46,10 @@ function setupButtons() {
 	loadBtn.changed(function() {
 		classifier.load(loadBtn.elt.files, function() {
 			select('#modelStatus').html('Custom Model Loaded!');
-			classifier.classify(gotResults);
 		});
 	});
+
+	addList = select('.predict');
 }
 
 // Show the results
@@ -56,11 +57,10 @@ function gotResults(err, result) {
 	if (err) {
 		console.error(err);
 	}
-	select('#result').html(result);
+	let output = result.split(' - ');
+	let name = output[0];
+	let price = output[1];
+	select('#name').html(name);
+	select('#price').html('- Rp.' + price);
 	classify();
-	// let output = result.split('-');
-	// let name = output[0];
-	// let price = output[1];
-	// select('#name').html(name);
-	// select('#price').html('- Rp.' + price);
 }
