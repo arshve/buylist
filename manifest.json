@@ -8,98 +8,98 @@
 	"start_url": "/",
 	"icons": [
 		{
-			"src": "images/1f395140-cb9d-2e2c-aa8d-7248ca298fa4.webPlatform.png",
-			"sizes": "44x44",
-			"type": "image/png"
-		},
-		{
-			"src": "images/256e2055-861f-5f90-9b6f-63845b2b4f24.webPlatform.png",
-			"sizes": "48x48",
-			"type": "image/png"
-		},
-		{
-			"src": "images/491e3cb2-8d7a-9680-e851-38f66ba4558d.webPlatform.png",
-			"sizes": "1240x600",
-			"type": "image/png"
-		},
-		{
-			"src": "images/3439fdf2-ae11-0d75-0c96-9897cea89e3b.webPlatform.png",
-			"sizes": "300x300",
-			"type": "image/png"
-		},
-		{
-			"src": "images/3d12d3b2-d739-16e9-f801-8367c6ca814e.webPlatform.png",
-			"sizes": "150x150",
-			"type": "image/png"
-		},
-		{
-			"src": "images/b6ac20ee-8712-2dd8-465a-c97da8a3ef9e.webPlatform.png",
-			"sizes": "88x88",
-			"type": "image/png"
-		},
-		{
-			"src": "images/31f7227f-84a4-47a6-ce1e-1f2280d8680e.webPlatform.png",
+			"src": "/images/24x24.png",
 			"sizes": "24x24",
 			"type": "image/png"
 		},
 		{
-			"src": "/images/d79d58b3-fb06-5eb3-d6a6-570fc7446143.webPlatform.png",
-			"sizes": "50x50",
-			"type": "image/png"
-		},
-		{
-			"src": "/images/42d93693-b368-23bd-3455-2ad0320e8565.webPlatform.png",
-			"sizes": "620x300",
-			"type": "image/png"
-		},
-		{
-			"src": "/images/c4f67821-f737-ca0b-aaab-f34978363ac7.webPlatform.png",
-			"sizes": "192x192",
-			"type": "image/png"
-		},
-		{
-			"src": "/images/bc12b5f2-8b24-cc41-0438-0795aed8dc81.webPlatform.png",
-			"sizes": "144x144",
-			"type": "image/png"
-		},
-		{
-			"src": "/images/db661a60-e37a-8520-075a-46a23ef92c7d.webPlatform.png",
-			"sizes": "96x96",
-			"type": "image/png"
-		},
-		{
-			"src": "/images/61de6b88-3eb8-2fd4-a03a-2ff96f0591d8.webPlatform.png",
-			"sizes": "72x72",
-			"type": "image/png"
-		},
-		{
-			"src": "/images/0fa94c15-c46d-fb2f-0516-7a0a8a8b79b1.webPlatform.png",
+			"src": "/images/36x36.png",
 			"sizes": "36x36",
 			"type": "image/png"
 		},
 		{
-			"src": "/images/71d99da2-fef6-7cb9-ab5a-a712457c98ee.webPlatform.png",
-			"sizes": "1024x1024",
+			"src": "/images/44x44.png",
+			"sizes": "44x44",
 			"type": "image/png"
 		},
 		{
-			"src": "/images/a1bc113b-45a1-8f44-d6e7-692346913ffd.webPlatform.png",
-			"sizes": "180x180",
+			"src": "/images/48x48.png",
+			"sizes": "48x48",
 			"type": "image/png"
 		},
 		{
-			"src": "/images/22b75a5f-7959-3ea7-ce4d-1a5a703838d2.webPlatform.png",
-			"sizes": "152x152",
+			"src": "/images/50x50.png",
+			"sizes": "50x50",
 			"type": "image/png"
 		},
 		{
-			"src": "/images/538424d3-4c87-5801-0f54-366193ed7c3b.webPlatform.png",
+			"src": "/images/72x72.png",
+			"sizes": "72x72",
+			"type": "image/png"
+		},
+		{
+			"src": "/images/76x76.png",
+			"sizes": "76x76",
+			"type": "image/png"
+		},
+		{
+			"src": "/images/88x88.png",
+			"sizes": "88x88",
+			"type": "image/png"
+		},
+		{
+			"src": "/images/96x96.png",
+			"sizes": "96x96",
+			"type": "image/png"
+		},
+		{
+			"src": "/images/120x120.png",
 			"sizes": "120x120",
 			"type": "image/png"
 		},
 		{
-			"src": "/images/342c4379-637e-083d-2a03-4aefe7f87015.webPlatform.png",
-			"sizes": "76x76",
+			"src": "/images/144x144.png",
+			"sizes": "144x144",
+			"type": "image/png"
+		},
+		{
+			"src": "/images/150x150.png",
+			"sizes": "150x150",
+			"type": "image/png"
+		},
+		{
+			"src": "/images/152x152.png",
+			"sizes": "152x152",
+			"type": "image/png"
+		},
+		{
+			"src": "/images/180x180.png",
+			"sizes": "180x180",
+			"type": "image/png"
+		},
+		{
+			"src": "/images/192x192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "/images/300x300.png",
+			"sizes": "300x300",
+			"type": "image/png"
+		},
+		{
+			"src": "/images/620x300.png",
+			"sizes": "620x300",
+			"type": "image/png"
+		},
+		{
+			"src": "/images/1024x1024.png",
+			"sizes": "1024x1024",
+			"type": "image/png"
+		},
+		{
+			"src": "/images/1240x600.png",
+			"sizes": "1240x600",
 			"type": "image/png"
 		}
 	],
