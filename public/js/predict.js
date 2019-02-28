@@ -1,16 +1,23 @@
 let mobilenet;
 let classifier;
+// Idle Config
+// let idle;
 // Camera Setting
-let label = 'Loading the model';
 let video = document.querySelector('#camera-stream');
 
-// Classify Train Test
-function classify() {
-	classifier.classify(gotResults);
+function setup() {
+	noCanvas();
+	// idle = select('.idle');
+	// idle.html('Click Predict Button to Start!');
+	// Extract PreTrain features from MobileNet
+	mobilenet = ml5.featureExtractor('MobileNet', modelReady);
+
+	// Create a new classifier using those features and give the video we want to use
+	classifier = mobilenet.classification(video, videoReady);
+	setupButtons();
 }
 
-// STATUS
-// model
+// MODEL STATUS
 function modelReady() {
 	select('#modelStatus').html('Model Ready!!');
 	classifier.load('model.json', customModelReady);
@@ -26,14 +33,9 @@ function videoReady() {
 	classifier.classify(gotResults);
 }
 
-function setup() {
-	noCanvas();
-	// Extract PreTrain features from MobileNet
-	mobilenet = ml5.featureExtractor('MobileNet', modelReady);
-
-	// Create a new classifier using those features and give the video we want to use
-	classifier = mobilenet.classification(video, videoReady);
-	setupButtons();
+// Classify Train Test
+function classify() {
+	classifier.classify(gotResults);
 }
 
 // A util function to create UI buttons
@@ -61,7 +63,7 @@ function gotResults(err, result) {
 	let output = result.split(' - ');
 	let name = output[0];
 	let price = output[1];
-	select('#name').html(name);
-	select('#price').html('- Rp.' + price);
+	select('#name').html('Add <strong>' + name + '</strong>');
+	select('#price').html('- Rp.' + price + ' to your list');
 	classify();
 }
