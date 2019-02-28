@@ -5,17 +5,6 @@ let classifier;
 // Camera Setting
 let video = document.querySelector('#camera-stream');
 
-function setup() {
-	noCanvas();
-
-	// Extract PreTrain features from MobileNet
-	mobilenet = ml5.featureExtractor('MobileNet', modelReady);
-
-	// Create a new classifier using those features and give the video we want to use
-	classifier = mobilenet.classification(video, videoReady);
-	setupButtons();
-}
-
 // MODEL STATUS
 function modelReady() {
 	select('#modelStatus').html('Model Ready!!');
@@ -29,6 +18,17 @@ function customModelReady() {
 // camera
 function videoReady() {
 	select('#videoStatus').html('Video ready!');
+}
+
+function setup() {
+	noCanvas();
+
+	// Extract PreTrain features from MobileNet
+	mobilenet = ml5.featureExtractor('MobileNet', modelReady);
+
+	// Create a new classifier using those features and give the video we want to use
+	classifier = mobilenet.classification(video, videoReady);
+	setupButtons();
 }
 
 // Classify Train Test
