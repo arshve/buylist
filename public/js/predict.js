@@ -13,12 +13,14 @@ function modelReady() {
 
 function customModelReady() {
 	select('#modelStatus').html('Model Ready!!');
+	select('#modelStatus').style('color', 'green');
 	console.log('Costume Model Ready to Use');
 }
 
 // camera
 function videoReady() {
 	select('#videoStatus').html('Video ready!');
+	select('#videoStatus').style('color', 'green');
 }
 
 function setup() {
@@ -29,6 +31,8 @@ function setup() {
 
 	// Create a new classifier using those features and give the video we want to use
 	classifier = mobilenet.classification(video, videoReady);
+
+	// Button Setting
 	setupButtons();
 }
 
