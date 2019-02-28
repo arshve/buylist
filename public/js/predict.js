@@ -7,18 +7,18 @@ let video = document.querySelector('#camera-stream');
 
 // MODEL STATUS
 function modelReady() {
-	select('#modelStatus').html('Model Ready!!');
+	console.log('Load Costume Model');
 	classifier.load('model.json', customModelReady);
 }
 
 function customModelReady() {
-	console.log('Custom Model is Ready');
+	select('#modelStatus').html('Model Ready!!');
+	console.log('Costume Model Ready to Use');
 }
 
 // camera
 function videoReady() {
 	select('#videoStatus').html('Video ready!');
-	classifier.classify(gotResults);
 }
 
 function setup() {

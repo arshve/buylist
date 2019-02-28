@@ -77,7 +77,7 @@ video {
 
 @media (min-width: 576px) {
 	.camera {
-		height: 400px;
+		height: 480px;
 	}
 	.predictText {
 		font-size: 1.2rem;
