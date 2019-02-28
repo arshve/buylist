@@ -4,6 +4,11 @@ let classifier;
 let label = 'Loading the model';
 let video = document.querySelector('#camera-stream');
 
+// Classify Train Test
+function classify() {
+	classifier.classify(gotResults);
+}
+
 // STATUS
 // model
 function modelReady() {
@@ -29,10 +34,6 @@ function setup() {
 	// Create a new classifier using those features and give the video we want to use
 	classifier = mobilenet.classification(video, videoReady);
 	setupButtons();
-}
-// Classify Train Test
-function classify() {
-	classifier.classify(gotResults);
 }
 
 // A util function to create UI buttons
