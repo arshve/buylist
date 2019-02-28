@@ -11,4 +11,4 @@ Using Node.js with Dependencies:
 >ejs 
 
 ### Deployed On Heroku 
-[Buy List](https://www.bit.ly/classifyimg)
+[Buy List](https://www.bit.ly/imgclassify)

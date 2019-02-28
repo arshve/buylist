@@ -11,7 +11,6 @@
 	"dependencies": {
 		"body-parser": "^1.18.3",
 		"ejs": "^2.6.1",
-		"express": "^4.16.4",
-		"workbox-sw": "^3.6.3"
+		"express": "^4.16.4"
 	}
 }
